@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vitocarlengiovanni.ajr">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AJR">
+        <activity
+            android:name=".LaporanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivityManager"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateDriverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RiwayatTransaksiCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RiwayatTransaksiDriverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileDriverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivityDriver"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PromoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBrosurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BrosurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivityCustomer"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.vitocarlengiovanni.ajr.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

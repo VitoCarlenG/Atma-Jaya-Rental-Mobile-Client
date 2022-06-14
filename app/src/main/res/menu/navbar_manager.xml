@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/laporan"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_insert_drive_file_24"
+        android:title="@string/laporan"/>
+
+</menu>

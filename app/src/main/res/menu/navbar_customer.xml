@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/brosur"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_directions_car_24"
+        android:title="@string/brosur"/>
+    <item
+        android:id="@+id/promo"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_monetization_on_24"
+        android:title="@string/promo"/>
+    <item
+        android:id="@+id/riwayat_transaksi"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="@string/riwayat_transaksi"/>
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/profile"/>
+
+</menu>

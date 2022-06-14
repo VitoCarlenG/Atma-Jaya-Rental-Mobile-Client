@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingTop="40dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width = "200dp"
+        android:layout_height= "300dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ajrental" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/title"
+        android:textColor="@color/ajr_theme" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:hint="@string/email"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:textColor="@color/ajr_theme" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:hint="@string/password"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:textColor="@color/ajr_theme" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp">
+
+        <Button
+            android:id="@+id/clearField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginEnd="16dp"
+            android:text="@string/clear_field"
+            android:textColor="@color/ajr_theme"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/ajr_theme" />
+    </LinearLayout>
+
+</LinearLayout>
